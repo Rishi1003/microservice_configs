@@ -9,7 +9,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/productdb
     username: admin
     password: admin
-    driver-class-name: org.postgresql.Driver
     hikari:
       connection-timeout: 2000
   jpa:
@@ -19,7 +18,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
 
   config:
     import: optional:configserver:http://localhost:8888

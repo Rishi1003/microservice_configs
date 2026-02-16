@@ -38,6 +38,5 @@ management:
   endpoint:
     health:
       show-details: always
-  endpoint:
     gateway:
       enabled: true

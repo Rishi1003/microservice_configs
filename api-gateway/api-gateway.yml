@@ -7,6 +7,8 @@ spring:
       discovery:
         locator:
           enabled: true
+      default-filter:
+        - AuthenticationFilter
       routes:
         - id: product-service
           uri: lb://product-service
@@ -20,6 +22,10 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/v1/users/**
+        - id: orders-service
+          uri: lb://orders-service
+          predicates:
+            - Path=/api/v1/orders/**
         - id: auth-service
           uri: lb://auth-service
           predicates:

@@ -40,3 +40,9 @@ management:
   endpoint:
     health:
       show-details: always
+
+admin:
+  setup:
+    username: admin
+    email: admin@example.com
+    password: adminpassword

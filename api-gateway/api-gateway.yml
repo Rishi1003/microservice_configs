@@ -7,8 +7,8 @@ spring:
       discovery:
         locator:
           enabled: true
-      default-filter:
-        - AuthenticationFilter
+      default-filters:
+        - Authentication
       routes:
         - id: product-service
           uri: lb://product-service

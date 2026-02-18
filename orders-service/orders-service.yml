@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ordersdb?timezone=Asia/Kolkata
     username: admin
-    password: [PASSWORD]
+    password: admin
     driver-class-name: org.postgresql.Driver
 
   jpa:

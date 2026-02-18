@@ -20,7 +20,7 @@ spring:
       mode: always
 
 server:
-  port: 8084
+  port: 8087
 
 logging:
   level:
